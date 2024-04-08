@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Zan.ico">
     <title>Fizika tudástár</title>
     <style>
         .container {
@@ -54,6 +55,9 @@
         b {
             font-weight: 600 !important;
         }
+        mjx-container {
+            width: fit-content !important;
+        }
         body {
         background-color: #1b1b1b !important;
         font-family: "Quicksand", sans-serif !important;
@@ -82,6 +86,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body data-bs-theme="dark">
     <div class="container">
@@ -99,16 +105,16 @@
                     </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                        <li><b>Sebesség</b> <br> <b>Képlet:</b> v = Δs / Δt <br> <b>Átváltás:</b> 1m/s = 3,6km/h</li>
-                        <li><b>Pillanatnyi sebesség</b> <br> <b>Képlet:</b> v<sub>p</sub> = a∙t</li>
-                        <li><b>Gyorsulás</b> <br> <b>Képlet:</b> a = Δv / Δt</li>
-                        <li><b>Négyzetes úttörvény</b> <br> <b>Képlet:</b> s = (a / 2) ∙ t<sup>2</sup></li>
-                        <li><b>Szabadesés (Nehézségi gyorsulás)</b> <br> <b>Képlet:</b> s = (g / 2) ∙ t<sup>2</sup></li>
-                        <li><b>Periódus idő</b> <br> <b>Képlet:</b> T = 1 / n = 1 / f</li>
-                        <li><b>Kerületi sebesség</b> <br> <b>Képlet:</b> V<sub>k</sub> = (2 ∙ r ∙ π) / T <br> <b>Egy kör esetén:</b> V<sub>k</sub> = ω ∙ r</li>
-                        <li><b>Szögsebesség</b> <br> <b>Képlet:</b> ω = (2 ∙ π) / T</li>
-                        <li><b>Centripetális gyorsulás</b> <br> <b>Képlet:</b> a<sub>cp</sub> = r ∙ ω <sup>2</sup></li>
-                        <li><b>Frekvencia</b> <br> <b>Képlet:</b> f = 1 / T</li>
+                        <li><b>Sebesség</b> <br> <b>Képlet:</b> $$ v = \frac{Δs}{Δt} $$ <br> <b>Átváltás:</b>$$ 1 \frac{m}{s} = 3,6 \frac{km}{h} $$</li>
+                        <li><b>Pillanatnyi sebesség</b> <br> <b>Képlet:</b> $$ v_p = a ∙ t $$</li>
+                        <li><b>Gyorsulás</b> <br> <b>Képlet:</b> $$ a = \frac{Δv}{Δt} $$</li>
+                        <li><b>Négyzetes úttörvény</b> <br> <b>Képlet:</b> $$ s = \frac{a}{2} ∙ t^2 $$</li>
+                        <li><b>Szabadesés (Nehézségi gyorsulás)</b> <br> <b>Képlet:</b> $$ s = \frac{g}{2} ∙ t^2 $$</li>
+                        <li><b>Periódus idő</b> <br> <b>Képlet:</b> $$ T = \frac{1}{n} = \frac{1}{f} $$</li>
+                        <li><b>Kerületi sebesség</b> <br> <b>Képlet:</b> $$ V_k = \frac{2 ∙ r ∙ π}{T} $$<br> <b>Egy kör esetén:</b> $$ V_k = ω ∙ r $$</li>
+                        <li><b>Szögsebesség</b> <br> <b>Képlet:</b> $$ ω = \frac{2 ∙ π}{T} $$</li>
+                        <li><b>Centripetális gyorsulás</b> <br> <b>Képlet:</b> $$ a_{cp} = r ∙ ω^2 $$</li>
+                        <li><b>Frekvencia</b> <br> <b>Képlet:</b> $$ f = \frac{1}{T} $$</li>
                     </div>
                 </div>
             </div>
@@ -120,7 +126,11 @@
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                        Ez a rész még nem tartalmaz adatokat.
+                        <li><b></b> <br> <b>Képlet:</b> </li>
+                        <li><b></b> <br> <b>Jel:</b> <br> <b>Mértékegység:</b> </li>
+
+                        <li><b>Erő</b> <br> <b>Képlet:</b> F = m ∙ a</li>
+                        <li><b>Erő</b> <br> <b>Jel: F</b> <br> <b>Mértékegység: N</b> </li>
                     </div>
                 </div>
             </div>
@@ -150,29 +160,29 @@
                             <li><b>Celsius</b> <br> <b>Jel:</b> T <br> <b>Mértékegység:</b> ℃ <br> <b>Átváltás:</b> T(℃) = T(K) - 273 <h1 style="display: none;">Hőmérséklet</h1></li>
 
                             <h3>A szilárd testek hőtágulása</h3>
-                            <li><b>Lineáris hőtágulás</b> <br> <b>Leírás:</b> A lineáris (vagy hosszanti) hőtágulási együttható megmutatja, hogy mennyivel változik meg a test hossza eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> l = l<sub>0</sub> (1 + α · ∆T)</li>
-                            <li><b>Felületi hőtágulás</b> <br> <b>Leírás:</b> A felületi hőtágulási együttható megmutatja, hogy mennyivel változik meg a test felülete eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> A = A<sub>0</sub> (1 + 2α · ∆T)</li>
-                            <li><b>Térfogati hőtágulás</b> <br> <b>Leírás:</b> A térfogati hőtágulási együttható megmutatja, hogy mennyivel változik meg a test térfogata eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> V = V<sub>0</sub> (1 + 3α · ∆T)</li>
+                            <li><b>Lineáris hőtágulás</b> <br> <b>Leírás:</b> A lineáris (vagy hosszanti) hőtágulási együttható megmutatja, hogy mennyivel változik meg a test hossza eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> $$ l = l_0 (1 + α ·∆T) $$</li>
+                            <li><b>Felületi hőtágulás</b> <br> <b>Leírás:</b> A felületi hőtágulási együttható megmutatja, hogy mennyivel változik meg a test felülete eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> $$ A = A_0 (1 + 2α ·∆T) $$</li>
+                            <li><b>Térfogati hőtágulás</b> <br> <b>Leírás:</b> A térfogati hőtágulási együttható megmutatja, hogy mennyivel változik meg a test térfogata eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> $$ V = V_0 (1 + 3α ·∆T) $$</li>
                             <li><b>Együttható</b> <br> <b>Jel:</b> α <br> <b>Mértékegység:</b> 1/K vagy 1/℃</li>
                             <li><b>Hosszúság</b> <br> <b>Jel:</b> l <br> <b>Mértékegység:</b> m</li>
                             <li><b>Felület</b> <br> <b>Jel:</b> A <br> <b>Mértékegység:</b> m<sup>2</sup></li>
                             <li><b>Térfogat</b> <br> <b>Jel:</b> V <br> <b>Mértékegység:</b> m<sup>3</sup></li>
 
                             <h3>A folyadékok hőtágulása</h3>
-                            <li><b>Térfogati hőtágulás</b> <br> <b>Leírás:</b> A térfogati hőtágulási együttható megmutatja, hogy mennyivel változik meg a test hossza eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> l = l<sub>0</sub> (1 + β · ∆T)</li></li>
-                            <li><b>Együttható</b> <br> <b>Jel:</b> β <br> <b>Mértékegység:</b> 1/K vagy 1/℃</li>
+                            <li><b>Térfogati hőtágulás</b> <br> <b>Leírás:</b> A térfogati hőtágulási együttható megmutatja, hogy mennyivel változik meg a test hossza eredeti hosszához viszonyítva, ha 1 °C-kal (illetve 1 K-nel) változik a hőmérséklete. <br><b>Képlet:</b> $$ l = l_0 (1 + β ·∆T) $$</li></li>
+                            <li><b>Együttható</b> <br> <b>Jel:</b> β <br> <b>Mértékegység:</b> $$ \frac{1}{K} vagy \frac{1}{℃} $$</li>
 
                             <h3>A gázok állapotváltozásai</h3>
-                            <li><b>Izoterm (Boyle - Mariotte)</b> <br> <b>Leírás:</b> A gáz tömege állandó <br> <b>Képlet:</b> p<sub>1</sub> · V<sub>1</sub> = p<sub>2</sub> · V<sub>2</sub></li>
-                            <li><b>Izobár (Charles)</b> <br> <b>Leírás:</b> A gáz nyomása állandó <br> <b>Képlet:</b> V<sub>1</sub> / T<sub>1</sub> = V<sub>2</sub> / T<sub>2</sub></li>
-                            <li><b>Izochor (Gay-Lussac)</b> <br> <b>Leírás:</b> A gáz térfogata állandó <br> <b>Képlet:</b> p<sub>1</sub> / p<sub>2</sub> = T<sub>1</sub> / T<sub>2</sub> </li>
-                            <li><b>Anyagmennyiség</b> <br> <b>Jel:</b> n <br> <b>Mértékegység:</b> g/mol</li>
+                            <li><b>Izoterm (Boyle - Mariotte)</b> <br> <b>Leírás:</b> A gáz tömege állandó <br> <b>Képlet:</b> $$ p_1 · V_1 = p_2 · V_2 $$</li>
+                            <li><b>Izobár (Charles)</b> <br> <b>Leírás:</b> A gáz nyomása állandó <br> <b>Képlet:</b> $$ \frac{V_1}{T_1} = \frac{V_2}{T_2} $$</li>
+                            <li><b>Izochor (Gay-Lussac)</b> <br> <b>Leírás:</b> A gáz térfogata állandó <br> <b>Képlet:</b> $$ \frac{p_1}{p_2} = \frac{T_1}{T_2} $$</li>
+                            <li><b>Anyagmennyiség</b> <br> <b>Jel:</b> n <br> <b>Mértékegység:</b> $$ \frac{g}{mol} $$</li>
                             <li><b>Nyomás</b> <br> <b>Jel:</b> p <br> <b>Mértékegység:</b> Pa</li>
                             <li><b>Tömeg</b> <br> <b>Jel:</b> m <br> <b>Mértékegység:</b> kg</li>
 
                             <h3>Egyesített gáztörvény, az ideális gáz állapotegyenlete</h3>
-                            <li><b>Egyesített gáztörvény</b> <br> <b>Képlet:</b> (p<sub>1</sub> · V<sub>1</sub>) / T<sub>1</sub> = (p<sub>2</sub> · V<sub>2</sub>) / T<sub>2</sub></li>
-                            <li><b>Ideális gáz állapotegyenlet</b> <br> <b>Képlet:</b> p · V = n · R · T</li>
+                            <li><b>Egyesített gáztörvény</b> <br> <b>Képlet:</b> $$ \frac{p_1 · V_1}{T_1} = \frac{p_2 · V_2}{T_2} $$</li>
+                            <li><b>Ideális gáz állapotegyenlet</b> <br> <b>Képlet:</b> $$ p · V = n · R · T $$</li>
                         </div>
                     </div>
                 </div>
