@@ -174,11 +174,11 @@
             </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                             Hőtani folyamatok
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <h3>A hőmérséklet és a hőmennyiség</h3>
                             <li><b>Hőmennyiség (Hő)</b> <br> <b>Jel:</b> Q <br> <b>Mértékegység:</b> J</li>
@@ -212,9 +212,60 @@
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwoS" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwoS">
+                            Termodinamika
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwoS" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <h3>A gázok belső energiája. A hőtan I. főtétele</h3>
+                            <li><b>Az anyagok belső energiája</b> <br> <b>Definíciója:</b> Egy anyagban tárolt energiát, mely az anyag belső szerkezetével kapcsolatos, az adott anyag belső energiájának nevezzük. <br> <b>Jel:</b> $$ E_b $$ <b>Mértékegység:</b> J</li>
+                            <li><b>Szabadsági fok</b> <br> <b>Jel:</b> f <br> <b>Értéke:</b> <br> · Egy atomos gáz: 3 <br> · Két atomos gáz: 5 <br> · Több atomos gáz: 6</li>
+                            <li><b>I. főtétel</b> <br> <b>Definíció:</b> A gáz belső energiájának megváltozása egyenlő a gáz által felvett vagy leadott hőmennyiség és a munkavégzés összegével. Ezt az összefüggést a hőtan (vagy a termodinamika) I. főtételének nevezzük. </li>
+                            <li><b>Általános energiatétel</b> <br> <b>Definíció:</b> Az általános energiatétel kimondja, hogy energia semmilyen folyamatnál nem keletkezik, nem semmisül meg, csak átalakul.</li>
+
+                            <h3>A termodinamikai folyamatok energetikai vizsgálata</h3>
+                            <li><b>Izochor állapotváltozás</b> <br> <b>Definíció:</b> Izochor folyamat esetén a gáz belső energiáját csak a hőmennyiség változtatja meg.</li>
+                            <li><b>Izocbár állapotváltozás</b> <br> <b>Definíció:</b> Izobár folyamat esetén a termikus és mechanikai kölcsönhatás egyszerre határozza meg a belső energia megváltozását.</li>
+                            <li><b>Izoterm állapotváltozás</b> <br> <b>Definíció:</b> Izoterm állapotváltozáskor a gázzal közölt hőmennyiség teljes egészében térfogati munkává alakul.</li>
+                            <li><b>Adiabatikus állapotváltozás</b> <br> <b>Definíció:</b> Adiabatikus állapotváltozáskor a gáz belső energiájának megváltozása egyenlő a gázon végzett munkával.</li>
+                            <li><b>Hőkapacitás</b> <br> <b>Jel:</b> C <br> <b>Mértékegység:</b> $$ 1 \frac{J}{K} $$</li>
+                            <li><b>Fajhő</b> <br> <b>Jel:</b> c <br> <b>Mértékegység:</b> $$ c = \frac{J}{kg · K}$$</li>
+
+                            <h3>A hőtan II. főtétele </h3>
+                            <li><b>II. főtétel</b> <br> <b>Definíció:</b> A testek termikus kölcsönhatásakor mindig a melegebb test ad át energiát a hidegebb testnek. Ennek a folyamatnak az iránya önmagától nem változik, csak külső beavatkozással fordítható meg.</li>
+                            <li><b>Hatásfok</b> <br> <b>Jel:</b> η</li>
+
+                            <h3>Olvadás, fagyás</h3>
+                            <li><b>Olvadás</b> <br> <b>Definíció:</b> Az a halmazállapot-változás, amikor a szilárd anyag folyékonnyá válik.</li>
+                            <li><b>Olvadáshő</b> <br> <b>Definíció:</b> Az olvadáshő megmutatja, hogy 1 kg olvadásponton lévő anyag mekkora hőmennyiséget vesz fel olvadáskor a környezetétől. <br> <b>Jel:</b> L<sub>o</sub> <br> <b>Mértékegység:</b> $$\frac{J}{Kg}$$</li>
+                            <li><b>Fagyás</b> <br> <b>Definíció:</b> Az a halmazállapot-változás, amelynek során a folyékony anyag szilárddá válik.</li>
+
+                            <h3>Párolgás, forrás, lecsapódás</h3>
+                            <li><b>Párolgás</b> <br> <b>Definíció:</b> A párolgáshő az a fizikai mennyiség, amely megmutatja, hogy 1 kg tömegű folyékony anyag gőzzé alakításához mekkora hőmennyiségre van szükség. <br> <b>Jel:</b> L<sub>p</sub> <br> <b>Mértékegység:</b> $$\frac{J}{Kg}$$</li>
+                            <li><b>Forrás</b> <br> <b>Definíció:</b> A forráshő az a fizikai mennyiség, amely megmutatja, hogy 1 kg forrásponton lévő folyékony anyag gőzzé válásakor mekkora hőmennyiségre van szükség. <br> <b>Jel:</b> L<sub>f</sub> <br> <b>Mértékegység:</b> $$\frac{J}{Kg}$$</li>
+                            <li><b>Szublimáció</b> <br> <b>Definíció:</b> Szublimációnak nevezzük azt a halmazállapotváltozást, amelyben a szilárd anyag légneművé válik.</li>
+                            <li><b>lecsapódás</b> <br> <b>Definíció:</b> Lecsapódásnak nevezzük azt a halmazállapotváltozást, amely során a légnemű anyag folyékonnyá válik. Lecsapódás közben az anyag hőt ad át a környezetének, csökken a belső energiája.</li>
+
+                            <h3>Halmazállapot- változások a természetben</h3>
+
+                            <h3>A hő terjedése</h3>
+
+                            <h3>Hőtan az otthonunkban</h3>
+
+                            <!--
+                            <li><b></b> <br> <b>Képlet:</b> </li>
+                            <li><b></b> <br> <b>Jel:</b> <br> <b>Mértékegység:</b> </li>
+                            -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </ul>
     </div>
+    <br><br><br>
     <script>
         function searchItem() {
             var input, filter, ul, li, i, txtValue;
